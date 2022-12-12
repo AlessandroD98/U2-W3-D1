@@ -155,7 +155,26 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log("----------------ESERCIZIO 8----------------");
+// console.log("----------------ESERCIZIO 8----------------");
+
+// function upperFirst(string) {
+//   const words = string.split(" ");
+
+//   let upparole = [];
+
+//   for (let i = 0; i < words.length; i++) {
+//     const word = words[i];
+
+//     const firstletter = word.charAt(0).toUpperCase();
+//     const otherletters = word.slice(1);
+//     const pgrande = firstletter + otherletters;
+
+//     upparole.push(pgrande);
+//   }
+//   console.log(upparole.join(" "));
+// }
+
+// console.log(upperFirst("ciao come va?"));
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -165,6 +184,17 @@ console.log("----------------ESERCIZIO 8----------------");
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 console.log("----------------ESERCIZIO 9----------------");
+
+function cutString(string) {
+  let lettersarr = string.split("");
+  console.log("primo array", lettersarr);
+  let firsandlastremoved = lettersarr.slice((start = 1), (end = lettersarr.length - 1));
+  console.log("rimosse inizio e fine", firsandlastremoved);
+  let result = firsandlastremoved.join("");
+  return result;
+}
+
+console.log(cutString("EPICODE"));
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
