@@ -97,13 +97,13 @@ REGOLE
 // function epify(str) {
 //   let arr = str.split(" ");
 //   if (arr[0] !== "Epicode") {
-//     return arr.splice(0, 0, "Epicode");
+//     return "Epicode" + " " + str;
 //   } else {
 //     return str;
 //   }
 // }
 
-// let frase = epify("per divenatre web developer!");
+// let frase = epify("Epicode se vuoi divenatre web developer!");
 // console.log(frase);
 
 /* ESERCIZIO 6
@@ -134,17 +134,19 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-console.log("----------------ESERCIZIO 7----------------");
+// console.log("----------------ESERCIZIO 7----------------");
 
-function reverseString(str) {
-  let newstr = str.split("");
-  console.log(newstr);
-  for (let i = newstr.length - 1; i >= 0; i--) {
-    console.log(newstr[i]);
-  }
-}
-finalrevers = reverseString("Alessandro");
-console.log(finalrevers);
+// function reverseString(str) {
+//   let newstr = str.split("");
+//   console.log(newstr);
+//   let rstr = newstr.reverse();
+//   console.log(rstr);
+//   let fstr = rstr.join("");
+//   console.log(fstr);
+// }
+
+// finalrevers = reverseString("Alessandro");
+// console.log(finalrevers);
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
